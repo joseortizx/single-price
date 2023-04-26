@@ -14,7 +14,6 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  color: var(--gray-bg-headings-btns);
 }
 img,
 picture,
@@ -42,4 +41,30 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* ================ CUSTOM PROPERTIES ================ */
+:root {
+  /* Primary */
+  --cyan: hsl(179, 62%, 43%);
+  --imp-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --neutral-gray: hsl(204, 43%, 93%);
+  --neutral-blue: hsl(218, 22%, 67%);
+}
+/* ================ SECTION STYLE ================ */
+.main__section {
+  font-size: 0.95rem;
+  margin: 2rem;
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+  color: var(--neutral-gray);
+}
+.section__article h3,
+p,
+button {
+  margin: 1.5rem 0.9rem;
 }
